@@ -390,6 +390,7 @@
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0  3rem 0;
     --nav-item-link-hover: var(--color-primary)
+    --root-padding-half: calc(50vw / 2);
   }
   
   /* universal box-sizing */
@@ -569,7 +570,7 @@
   /* all classes that start with col- */
   [class^="col-"] {
     float: left;
-    padding: 0.5rem;
+    padding: var(--root-padding-half); /* Set padding to half of the root element */
   }
   
   .col-1-3,
